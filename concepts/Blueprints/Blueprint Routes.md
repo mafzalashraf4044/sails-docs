@@ -2,7 +2,7 @@
 
 When you run `sails lift` with blueprints enabled, the framework inspects your models and configuration in order to [bind certain routes](https://sailsjs.com/documentation/concepts/Routes) automatically. These implicit blueprint routes (sometimes called "shadow routes", or even just "shadows") allow your app to respond to certain requests without you having to bind those routes manually in your `config/routes.js` file.  When enabled, the blueprint routes point to their corresponding blueprint *actions* (see "Action routes" below), any of which can be overridden with custom code.
 
-There are four types of blueprint routes in Sails:
+There are three types of blueprint routes in Sails:
 
 ### RESTful blueprint routes
 REST blueprints are the automatically generated routes Sails uses to expose a conventional REST API for a model, including `find`, `create`, `update`, and `destroy` actions. The path for RESTful routes is always `/:modelIdentity` or `/:modelIdentity/:id`.  These routes use the HTTP "verb" to determine the action to take.
